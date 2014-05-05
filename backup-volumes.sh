@@ -5,7 +5,7 @@ DATESTAMP=`date +%Y%m%d`
 TIMESTAMP=`date +%H%M`
 LOGFILE="/var/log/ec2_backup_ebs_backup.log"
  
-VOLUMES=( vol-xxxxxx )
+VOLUMES=( vol-xxxxxx vol-xxxxxx vol-xxxxxx )
 
 echo "EBS BACKUP $DATESTAMP $TIMESTAMP" 2>&1 | tee -a $LOGFILE
 echo " " 2>&1 | tee -a $LOGFILE
